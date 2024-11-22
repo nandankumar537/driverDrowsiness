@@ -9,7 +9,7 @@ arduino = serial.Serial('COM3', 9600, timeout=1)
 # Mediapipe setup
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(max_num_faces=1, refine_landmarks=True)
-blink_threshold = 0.25  # Threshold for eye aspect ratio
+blink_threshold = 0.25   # Threshold for eye aspect ratio
 closed_time_limit = 5   # Seconds to trigger alert
 
 # Helper function to calculate eye aspect ratio
